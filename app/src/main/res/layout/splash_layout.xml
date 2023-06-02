@@ -22,7 +22,7 @@
         android:textColor="#4CAF50"
         android:textSize="30sp"
         android:textStyle="bold|italic"
-        android:fontFamily="@font/MavenPro"/>
+        android:fontFamily="@font/mavenpro"/>
 
     <ProgressBar
         android:layout_width="wrap_content"

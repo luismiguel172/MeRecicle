@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".Login_Activity"
-    android:background="#7BF1B4">
+    android:background="#4AF39C">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,11 +21,12 @@
                 android:text="Me Recicla"
                 android:textSize="35dp"
                 android:textStyle="bold|italic"
+                android:fontFamily="@font/mavenpro"/>
 
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:src="@drawable/logo"
                 />
 
@@ -38,6 +39,7 @@
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
                 app:boxBackgroundColor="#FFF"
+                app:startIconDrawable="@drawable/baseline_person"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -46,7 +48,7 @@
                     android:layout_marginLeft="45dp"
                     android:layout_marginRight="45dp"
                     android:hint="Insira o Usuário"
-                    android:fontFamily="@font/MavenPro"
+                    android:fontFamily="@font/mavenpro"
                     >
 
                 </com.google.android.material.textfield.TextInputEditText>
@@ -65,6 +67,8 @@
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
                 app:boxBackgroundColor="#FFF"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/baseline_lock"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -74,7 +78,8 @@
                     android:layout_marginRight="45dp"
                     android:hint="Insira a Senha"
                     android:inputType="textPassword"
-                    android:fontFamily="@font/MavenPro"
+                    android:fontFamily="@font/mavenpro"
+
                     >
 
                 </com.google.android.material.textfield.TextInputEditText>
@@ -83,6 +88,14 @@
 
 
             </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Esquece sua senha?"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="159dp"
+            android:fontFamily="@font/mavenpro"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -98,12 +111,13 @@
                 android:layout_margin="3dp"
                 android:text="Entrar"
                 android:padding="5dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                />
 
             <Button
                 android:layout_width="345dp"
                 android:layout_height="wrap_content"
-                android:text="Cadastre-se"
+                android:text="Cadastre-se"/>
 
 
 
